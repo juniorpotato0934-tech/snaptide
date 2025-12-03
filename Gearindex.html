@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SnapTide | Gear</title>
+
+<style>
+    body {
+        font-family: 'Times New Roman', Arial;
+        margin: 0;
+    }
+
+    .bg-blur {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(waves.jpg);
+        background-size: cover;
+        background-position: center;
+        filter: blur(4.5px);
+        z-index: -1;
+    }
+
+    header {
+        background: #fdfdfd;
+        padding: 20px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 3px solid #52d3e4;
+    }
+
+    .logo-box {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo {
+        font-size: 32px;
+        font-weight: bold;
+        color: #5085f7;
+        margin-right: 10px;
+        text-decoration: none;
+    }
+
+    .tagline {
+        color: #1559b3b9;
+        font-size: 20px;
+        font-style: italic;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 30px;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        transition: 0.2s;
+    }
+
+    nav ul li a:hover {
+        color: #ff6600;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 90px;
+        margin-top: 30px;
+        color: #dceb9c;
+        text-decoration: underline;
+        text-decoration-thickness: 4px;
+        text-underline-offset: 10px;
+        text-decoration-color: #0c1100;
+    }
+
+    /* Gears and Lenses*/
+    
+    .gear-container {
+        width: 70%;
+        margin: 50px auto;
+        background: rgba(255, 255, 255, 0.2);
+        padding: 40px;
+        border-radius: 15px;
+        backdrop-filter: blur(5px);
+        box-shadow: 0px 10px 30px rgba(0,0,0,0.3);
+        color: #0c1100;
+        font-size: 20px;
+        line-height: 1.7;
+        border: 2px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .gear-container h2 {
+        font-size: 40px;
+        color: #1559b3;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        text-align: left;
+    }
+
+    .gear-container p {
+        margin-bottom: 20px;
+    }
+
+    .gear-box {
+        margin-bottom: 30px;
+        padding: 20px;
+        background: rgba(255,255,255,0.3);
+        border-radius: 10px;
+        border-left: 5px solid #1559b3;
+    }
+
+    .gear-image {
+        width: 250px;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        box-shadow: 0px 5px 20px rgba(0,0,0,0.3);
+    }
+
+    .gear-title {
+        font-size: 28px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: #113c7b;
+    }
+</style>
+</head>
+<body>
+
+<div class="bg-blur"></div>
+
+<header>
+    <div class="logo-box">
+        <a href="index.html" class="logo">SnapTide</a>
+        <div class="tagline">Waves of Creative Visuals</div>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="Galleryindex.html">Gallery</a></li>
+            <li><a href="Genreindex.html">Genre</a></li>
+            <li><a href="Gearindex.html">Gear</a></li>
+            <li><a href="Aboutindex.html">About</a></li>
+            <li><a href="Registerindex.html">Register</a></li>
+        </ul>
+    </nav>
+</header>
+
+<h1>Gear</h1>
+
+<div class="gear-container">
+
+    <!-- Gear -->
+    <h2>Why Camera Gear Matters</h2>
+    <p>
+        Camera gear plays an important role in shaping the quality, style, and flexibility of your photos. 
+        While skill and creativity matter most, the right gear helps you capture clearer images, work better in low light, freeze fast action, and achieve specific looks such as blurry backgrounds or wide scenic shots. 
+        Having the proper tools allows photographers to express their vision more effectively and adapt to different shooting situations with confidence.
+    </p>
+
+    <!-- Cameras -->
+    <h2>Beginner-Friendly Cameras</h2>
+
+    <div class="gear-box">
+        <img src="m50.jpg" class="gear-image">
+        <div class="gear-title">Canon EOS M50 Mark II</div>
+        <p>
+            A lightweight and easy-to-use mirrorless camera perfect for beginners. 
+            It has great autofocus, sharp image quality, and excellent performance for both photography and video. 
+            Ideal for travel, portraits, and everyday shooting.
+        </p>
+    </div>
+
+    <div class="gear-box">
+        <img src="sony6100.jpg" class="gear-image">
+        <div class="gear-title">Sony A6100</div>
+        <p>
+            Known for its fast autofocus and impressive color quality, the Sony A6100 is perfect for beginners who want to explore street, portrait, or action photography. 
+            Compact but powerful, it performs well even in low-light situations.
+        </p>
+    </div>
+
+    <div class="gear-box">
+        <img src="nikon.jpg" class="gear-image">
+        <div class="gear-title">Nikon D3500 (DSLR)</div>
+        <p>
+            A classic entry-level DSLR with excellent battery life and simple controls. 
+            It’s great for learning the basics of exposure, lenses, and manual settings while still producing high-quality images.
+        </p>
+    </div>
+
+    <!-- Lenses -->
+    <h2>Recommended Lenses & Their Purposes</h2>
+
+    
+    <div class="gear-box">
+        <img src="50mm.jpg" class="gear-image">
+        <div class="gear-title">50mm f/1.8 (Nifty Fifty)</div>
+        <p>
+            Best for portraits, street photography, and low-light situations. 
+            Creates beautiful blurry backgrounds (bokeh) and sharp results. 
+            Affordable and highly recommended for beginners.
+        </p>
+    </div>
+
+    <div class="gear-box">
+        <img src="kitlens.jpg" class="gear-image">
+        <div class="gear-title">18–55mm Kit Lens</div>
+        <p>
+            A versatile all-around lens ideal for beginners. 
+            Works for landscapes, family photos, street shots, and basic portraits. 
+            Not the sharpest, but perfect for learning composition and framing.
+        </p>
+    </div>
+
+    <div class="gear-box">
+        <img src="200mm.jpg" class="gear-image">
+        <div class="gear-title">55–200mm Telephoto Lens</div>
+        <p>
+            Great for capturing distant subjects like wildlife, sports, or candid street moments. 
+            Provides strong zoom reach and good subject isolation without needing to get close.
+        </p>
+    </div>
+
+    <div class="gear-box">
+        <img src="18mm.jpg" class="gear-image">
+        <div class="gear-title">10–18mm Wide-Angle Lens</div>
+        <p>
+            Ideal for landscapes, architecture, and creative shots. 
+            Allows you to capture more of the environment and exaggerates perspective for dramatic effects.
+        </p>
+    </div>
+
+</div>
+
+</body>
+</html>

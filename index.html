@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SnapTide</title>
+
+<style>
+    body {
+        font-family: 'Times New Roman', Times, serif, Arial, Helvetica, sans-serif;
+        margin: 0;
+        height: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .bg-blur {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(waves.jpg);
+    background-size: cover;
+    background-position: center;
+    filter: blur(4.5px);
+    z-index: -1;    /* for behind purpose */
+    }
+
+
+    /* Header */
+    header {
+        background: #fdfdfd;
+        padding: 20px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 3px solid #52d3e4;
+    }
+
+
+    /* Logo area */
+    .logo-box {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo {
+        font-size: 32px;
+        font-weight: bold;
+        color: #5085f7;
+        margin-right: 10px;
+    }
+
+    .tagline {
+        color: #1559b3b9;
+        font-size: 20px;
+        font-style: italic;
+    }
+
+    /* Navigation */
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 30px;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li {
+        font-size: 18px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        transition: color 0.2s;
+    }
+
+    nav ul li a:hover {
+        color: #ff6600;
+    }
+
+    /* sample and shot */
+    h1 {
+        text-align: center;
+        font-size: 90px;
+        letter-spacing: 5px;
+        margin-top: 30px;
+        color: #dceb9c;
+        text-decoration: underline;
+       text-decoration-thickness: 4px;
+       text-decoration-color: #0c1100;
+       text-underline-offset: 10px;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 35px;
+        margin-top: -70px;
+        font-weight: normal;
+        color: #0c1100;
+        
+    }
+
+    /* Gallery Section */
+    .photographs {
+        width: 90%;
+        margin: 50px auto;
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        flex-wrap: wrap;
+        backdrop-filter: blur(2px);
+    }
+
+
+    .photo {
+        width: 350px;
+        height: 450px;
+        background: #cfcfcf;
+        border-radius: 10px;
+        overflow: hidden;
+        border: 3px solid #ccc;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        /* Animation */
+        transition: transform 0.5s ease, box-shadow 0.5s ease;
+        
+    }
+
+    .photo {
+        
+
+        /* default state (no cursor) */
+        filter: blur(2px);
+        opacity: 0.7;
+
+        
+        transition: filter 0.5s ease, opacity 0.5s ease;
+        box-shadow: 0px 20px 40px rgba(0,0,0,0.25);
+        transition: transform 0.4s ease;
+        
+        
+
+    }
+
+    /* Zoom */
+    .photo:hover {
+        filter: blur(0px);
+        opacity: 3;
+
+        transform: scale(1.25);
+        
+    }
+
+
+    .photo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        
+    }
+
+    footer {
+    width: 100%;
+    background: #0c1100cc;
+    color: #dceb9c;
+    padding: 20px 0;
+    font-size: 18px;
+    backdrop-filter: blur(4px);
+    border-top: 3px solid transparent;
+
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    text-align: center;
+
+    margin-top: auto;   /* THIS pushes footer to the bottom */
+    }
+    footer p {
+        margin: 0;
+    }
+    
+</style>
+
+</head>
+<body>
+
+<div class="bg-blur"></div>
+
+
+<header>
+    <div class="logo-box">
+        <div class="logo">SnapTide</div>
+        <div class="tagline">Waves of Creative Visuals</div>
+    </div>
+
+    <nav>
+        
+        <ul>
+            <li><a href="Galleryindex.html">Gallery</a></li>
+            <li><a href="Genreindex.html">Genre</a></li>
+            <li><a href="Gearindex.html">Gear</a></li>
+            <li><a href="Aboutindex.html">About</a></li>
+            <li><a href="Registerindex.html">Register</a></li>
+        </ul>
+    </nav>
+</header>
+    <h1>SAMPLE</h1>
+<h2>SHOTS.</h2>
+
+<section class="photographs" id="photographs">
+
+    <div class="photo">
+        <img src="photo4.jpg" alt="">
+    </div>
+
+    <div class="photo">
+        <img src="photo2.jpg" alt="">
+    </div>
+
+    <div class="photo">
+        <img src="photo3.jpg" alt="">
+    </div>
+
+</section>
+
+<footer>
+    <p>Email: ninojoleylanan@gmail.com</p>
+    <p>Facbook: Nino Jole Ylanan</p>
+    <p>Contact No.: 09215957102</p>
+</footer>
+
+
+</body>
+</html>

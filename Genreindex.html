@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SnapTide</title>
+
+<style>
+    body {
+        font-family: 'Times New Roman', Arial;
+        margin: 0;
+    }
+
+    .bg-blur {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(waves.jpg);
+        background-size: cover;
+        background-position: center;
+        filter: blur(4.5px);
+        z-index: -1;
+    }
+
+    header {
+        background: #fdfdfd;
+        padding: 20px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 3px solid #52d3e4;
+    }
+
+    .logo-box {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo {
+        font-size: 32px;
+        font-weight: bold;
+        color: #5085f7;
+        margin-right: 10px;
+        text-decoration: none;
+
+    }
+
+    .tagline {
+        color: #1559b3b9;
+        font-size: 20px;
+        font-style: italic;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 30px;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        transition: color 0.2s;
+    }
+
+    nav ul li a:hover {
+        color: #ff6600;
+    }
+
+    /* sample and shot */
+   
+    
+
+    .text {
+        font-size: 32px;
+        padding: 0;
+        text-align: center;
+        transition: .5s ease;
+        opacity: 2;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+
+    }
+
+    .container:hover .image {
+        opacity: 0.6;
+    }
+
+    .container:hover .middle {
+        opacity: 1;
+    }
+
+    .middle {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .genre-section {
+        width: 60%;
+        margin: 40px auto;
+        display: flex;
+        flex-direction: column;
+        gap: 70px;
+    }
+
+    .genre-box {
+        text-align: center;
+    }
+
+    .genre-box img {
+        width: 100%;
+        height: 450px;
+        object-fit: cover;
+        border-radius: 10px;
+        border: 3px solid #ccc;
+        transition: .4s ease;
+        cursor: pointer;
+    }
+
+    .genre-box img:hover {
+        transform: scale(1.05);
+        filter: brightness(80%);
+    }
+
+    .genre-title {
+        margin-top: 20px;
+        font-size: 40px;
+        color: #fff;
+        text-shadow: 2px 2px 5px black;
+        font-weight: bold;
+    }
+
+    .genre-desc {
+        font-size: 20px;
+        color: #f1f1f1;
+        margin-top: 10px;
+        line-height: 1.5;
+    }
+ 
+
+
+    
+</style>
+
+</head>
+<body>
+
+<div class="bg-blur"></div>
+
+
+<header>
+    <div class="logo-box">
+        <a href="index.html" class="logo">SnapTide</a>
+        <div class="tagline">Waves of Creative Visuals</div>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="Galleryindex.html">Gallery</a></li>
+            <li><a href="Genreindex.html">Genre</a></li>
+            <li><a href="Gearindex.html">Gear</a></li>
+            <li><a href="Aboutindex.html">About</a></li>
+            <li><a href="Registerindex.html">Register</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="genre-section">
+
+    <!-- STREET -->
+    <div class="genre-box">
+        <img src="street.jpg">
+        <div class="genre-title">Street Photography</div>
+        <div class="genre-desc">
+            Street photography is a genre that captures candid moments in public places, focusing on the everyday life, emotions, and stories of people and environments.
+            It highlights spontaneous interactions, real expressions, and the raw energy of urban settings without staging or directing subjects
+        </div>
+    </div>
+
+    <!-- NATURE -->
+    <div class="genre-box">
+        <img src="nature.jpg">
+        <div class="genre-title">Nature Photography</div>
+        <div class="genre-desc">
+            Showcasing the beauty of landscapes, plants, and the natural world.
+            This genre focuses on peaceful scenes and breathtaking environments.
+        </div>
+    </div>
+
+    <!-- PORTRAITS -->
+    <div class="genre-box">
+        <img src="portraits.jpg">
+        <div class="genre-title">Portraits</div>
+        <div class="genre-desc">
+            Highlighting the personality and emotions of a person through expressive imagery.
+            Portraits reveal character, mood, and human depth.
+        </div>
+    </div>
+
+    <!-- ANIMALS -->
+    <div class="genre-box">
+        <img src="animals.jpg">
+        <div class="genre-title">Animal Photography</div>
+        <div class="genre-desc">
+            Capturing animals in their natural behavior and environment.
+            This genre celebrates wildlife and the diversity of living creatures.
+        </div>
+    </div>
+
+</section>
+
+
+
+</body>
+</html>
